@@ -1,0 +1,31 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:white;
+  color:black;
+}
+.container{
+  width:90%;
+  margin:0 auto;
+}
+nav{
+  width:24.5%;
+  display:inline-block;
+  vertical-align: top;
+}
+.navWrap{
+  background:#eee;
+}
+.mainContentWrap{
+  width:75%;
+  display:inline-block;
+  background:#333;
+}
+.grid-3{
+  width:30%;
+  display:inline-block;
+}
