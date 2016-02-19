@@ -7,41 +7,33 @@
     <title>My Photo Album</title>
   </head>
   <body>
-    <header>
-    </header>
     <section>
       <div class="container">
-        <nav>
-          <div class="navWrap">
-            <ul>
-              <a rel="home" href="#"><li>Home</li></a>
-              <a rel="album1" href="#"><li>Album 1</li></a>
-              <a rel="album2" href="#"><li>Album 2</li></a>
-              <a rel="album3" href="#"><li>Album 3</li></a>
-            </ul>
-          </div>
-        </nav>
-        <div class="mainContentWrap">
+        <div class="main">
           <div class="mainTitle">
             <h1>Photo Album</h1>
           </div>
-          <div class="collections">
-            <div class="collections-grid">
-              <div class="grid-3">
-                <div class="box">
-                </div>
-              </div>
+          <div rel="collections" class="collectionsView section active">
+            <div class="sectionTitle">
+              <h2>collections</h2>
+              <p rel="album1">album1photo</p>
+              <p>album2photo</p>
+              <p>albumt3photo</p>
+              <p></p>
+            </div>
+            <div class="albumContainer">
+              <a href="#">Test Album</a>
             </div>
           </div>
-          <div class="album">
-            <div class="album-grid">
-              <div class="grid-3">
-
-              </div>
+          <div rel="album1" class="album section">
+            <div class="sectionTitle">
+              <h2>Album Title</h2>
+              <a href="#">test photo</a>
             </div>
           </div>
-          <div class="photo">
-            <div class="grid-2">
+          <div rel="photoView" class="photo section">
+            <div class="mainTitle">
+              <h2>Photo Title</h2>
             </div>
           </div>
         </div>
