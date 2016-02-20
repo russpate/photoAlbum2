@@ -15,41 +15,39 @@
         <li><a rel="album-3" href="#">Album 3</a></li>
       </ul>
     </header>
-    <section class="albums active">
-        <h1>Photo Album</h1>
-        <a href="#">album 1</a>
-    </section>
-    <section rel="album-1" class="album-1">
-      <h1>Album 1</h1>
-      <a rel="allPhotos" href="#">All Photos</a>
-      <a rel="photo-1" href="#">photo</a>
-      <a rel="photo-2" href="#">photo</a>
-      <a rel="photo-3" href="#">photo</a>
-      <a rel="photo-4" href="#">photo</a>
-      <a rel="photo-5" href="#">photo</a>
-      <a rel="photo-6" href="#">photo</a>
-    </section>
-    <section rel="album-2" class="album-2">
-      <h1>Album 2</h1>
-      <a rel="photo-1" href="#">photo</a>
-      <a rel="photo-2" href="#">photo</a>
-      <a rel="photo-3" href="#">photo</a>
-      <a rel="photo-4" href="#">photo</a>
-      <a rel="photo-5" href="#">photo</a>
-      <a rel="photo-6" href="#">photo</a>
-    </section>
-    <section rel="album-3" class="album-3">
-      <h1>Album 3</h1>
-      <a rel="photo-1" href="#">photo</a>
-      <a rel="photo-2" href="#">photo</a>
-      <a rel="photo-3" href="#">photo</a>
-      <a rel="photo-4" href="#">photo</a>
-      <a rel="photo-5" href="#">photo</a>
-      <a rel="photo-6" href="#">photo</a>
-      <section rel="photo-1" class="photo-1">
-        photo 1
+    <div class="container">
+      <section class="albums active">
+          <h1>Photo Albums</h1>
+          <a href="#">album 1</a>
       </section>
-    </section>
+      <section rel="album-1" class="album album-1">
+        <h1>Album 1</h1>
+        <div rel="allPhotos" class="allPhotos photo toggle show" href="#">
+          <a rel="allPhotos" class="photoBack" href="#">back to Album</a>
+          <a rel="photo-1" class="photoThumb" href="#">photo1 thumb</a>
+          <a rel="photo-2" class="photoThumb" href="#">photo2 thumb</a>
+          <a rel="photo-3" class="photoThumb" href="#">photo3 thumb</a>
+          <a rel="photo-4" class="photoThumb" href="#">photo4 thumb</a>
+          <a rel="photo-5" class="photoThumb" href="#">photo5 thumb</a>
+          <a rel="photo-6" class="photoThumb" href="#">photo6 thumb</a>
+        </div>
+        <div class="photo-1 photo toggle" href="#">photo1</div>
+        <div class="photo-2 photo toggle" href="#">photo2</div>
+        <div class="photo-3 photo toggle" href="#">photo3</div>
+        <div class="photo-4 photo toggle" href="#">photo4</div>
+        <div class="photo-5 photo toggle" href="#">photo5</div>
+        <div class="photo-6 photo toggle" href="#">photo6</div>
+      </section>
+      <section rel="album-2" class="album album-2">
+        <h1>Album 2</h1>
+      </section>
+      <section rel="album-3" class="album album-3">
+        <h1>Album 3</h1>
+        <section rel="photo-1" class="photo-1">
+          photo 1
+        </section>
+      </section>
+    </div>
     <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
