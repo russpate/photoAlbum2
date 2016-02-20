@@ -1,30 +1,26 @@
+$(document).ready(function () {
 //
 //
 //
 //
 ////// Click Events
 //
+// selects albums  from the homepage
+  var navItem = $('li').find('a');
+  navItem.on("click", function (event) {
+    event.preventDefault();
+    var selectedPage = "." + $(this).attr('rel');
+    $(selectedPage).siblings('section').removeClass('active');
+    $(selectedPage).addClass('active');
+  });
 //
-// var intoAlbum = $('.main');
-// intoAlbum.on("click", function (event) {
-//   event.preventDefault();
-//
-//   var selected = "." + $(this).attr('rel');
-//   $(selected).siblings('.section').removeClass('active');
-//   $(selected).addClass('active');
-//
-//   console.log("click!!!!");
-// });
+// from the album in to the photo
+  var photoItem = $('a');
+  photoItem.click(function (event) {
+    event.preventDefault();
+    var selectedPage = "." + $(this).attr('rel');
+    $(selectedPage).siblings('photo').removeClass('photoActive');
+    $(selectedPage).addClass('photoActive');
+  });
 
-$('.main').on("click", '.collectionsView p',function (event) {
-  event.preventDefault();
-  console.log(this);
-  var albumName = $(this).attr('rel');
-  // albums[albumName]
-
-
-  $(this).siblings('.section').removeClass('active');
-  $(this).addClass('active');
-
-  console.log("click!!!!");
-});
+}); // $(document).ready

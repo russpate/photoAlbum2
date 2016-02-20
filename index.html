@@ -7,37 +7,48 @@
     <title>My Photo Album</title>
   </head>
   <body>
-    <section>
-      <div class="container">
-        <div class="main">
-          <div class="mainTitle">
-            <h1>Photo Album</h1>
-          </div>
-          <div rel="collections" class="collectionsView section active">
-            <div class="sectionTitle">
-              <h2>collections</h2>
-              <p rel="album1">album1photo</p>
-              <p>album2photo</p>
-              <p>albumt3photo</p>
-              <p></p>
-            </div>
-            <div class="albumContainer">
-              <a href="#">Test Album</a>
-            </div>
-          </div>
-          <div rel="album1" class="album section">
-            <div class="sectionTitle">
-              <h2>Album Title</h2>
-              <a href="#">test photo</a>
-            </div>
-          </div>
-          <div rel="photoView" class="photo section">
-            <div class="mainTitle">
-              <h2>Photo Title</h2>
-            </div>
-          </div>
-        </div>
-      </div>
+    <header>
+      <ul>
+        <li><a rel="albums" href="#">Home</a></li>
+        <li><a rel="album-1" href="#">Album 1</a></li>
+        <li><a rel="album-2" href="#">Album 2</a></li>
+        <li><a rel="album-3" href="#">Album 3</a></li>
+      </ul>
+    </header>
+    <section class="albums active">
+        <h1>Photo Album</h1>
+        <a href="#">album 1</a>
+    </section>
+    <section rel="album-1" class="album-1">
+      <h1>Album 1</h1>
+      <a rel="allPhotos" href="#">All Photos</a>
+      <a rel="photo-1" href="#">photo</a>
+      <a rel="photo-2" href="#">photo</a>
+      <a rel="photo-3" href="#">photo</a>
+      <a rel="photo-4" href="#">photo</a>
+      <a rel="photo-5" href="#">photo</a>
+      <a rel="photo-6" href="#">photo</a>
+    </section>
+    <section rel="album-2" class="album-2">
+      <h1>Album 2</h1>
+      <a rel="photo-1" href="#">photo</a>
+      <a rel="photo-2" href="#">photo</a>
+      <a rel="photo-3" href="#">photo</a>
+      <a rel="photo-4" href="#">photo</a>
+      <a rel="photo-5" href="#">photo</a>
+      <a rel="photo-6" href="#">photo</a>
+    </section>
+    <section rel="album-3" class="album-3">
+      <h1>Album 3</h1>
+      <a rel="photo-1" href="#">photo</a>
+      <a rel="photo-2" href="#">photo</a>
+      <a rel="photo-3" href="#">photo</a>
+      <a rel="photo-4" href="#">photo</a>
+      <a rel="photo-5" href="#">photo</a>
+      <a rel="photo-6" href="#">photo</a>
+      <section rel="photo-1" class="photo-1">
+        photo 1
+      </section>
     </section>
     <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>

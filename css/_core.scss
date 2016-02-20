@@ -1,9 +1,15 @@
 body{
-  background:yellow;
+  background:green;
 }
-.section{
+section{
   display:none;
 }
 .active{
+  display:inline-block;
+}
+.photo{
+  display:none;
+}
+.photoActive{
   display:inline-block;
 }
