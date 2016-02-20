@@ -20,7 +20,7 @@ $(document).ready(function () {
 // from the album in to the photo
 //
 //This is the thing you are cicking
-  var photoItem = $('album div a');
+  var photoItem = $('.photoThumb');
   photoItem.on("click", function (event) {
     event.preventDefault();
     //rel attr connects the two elements
