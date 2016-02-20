@@ -19,10 +19,13 @@ $(document).ready(function () {
 //
 // from the album in to the photo
 //
-  var photoItem = $('allPhotos').find('a');
+//This is the thing you are cicking
+  var photoItem = $('album div a');
   photoItem.on("click", function (event) {
     event.preventDefault();
+    //rel attr connects the two elements
     var selectedPhoto = "." + $(this).attr('rel');
+    //This is the thing that is getting effected by click
     $(selectedPhoto).siblings('.photo').removeClass('show');
     $(selectedPhoto).addClass('show');
   });
