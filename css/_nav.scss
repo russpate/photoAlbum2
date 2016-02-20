@@ -1,0 +1,13 @@
+nav{
+  li{
+    display:inline;
+  }
+  a{
+    text-decoration:none;
+    color:blue;
+    font-weight:600;
+    &:hover{
+      color:green;
+    }
+  }
+}

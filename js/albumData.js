@@ -1,22 +1,92 @@
-/* jshint ignore:start */
 
 var albumData = [{
   type: "album",
-  albumTitle: "album-1",
-  albumCover: "images/photo_1_thumb.png",
+  rel: "album-1",
+  class: "album-1",
+  albumTitle: "Album 1",
+  albumCover: "https://source.unsplash.com/300x300/weekly?water",
   photos: [{
-    photoName: "photo 1",
-    photoThumb: "images/photo_1_thumb.png",
-    photoFull:  "images/photo_1_full.jpeg",
+    photoName: "photo-1-1",
+    class: "photo-1",
+    rel: "photo-1",
+    photoThumb: "https://source.unsplash.com/300x300/weekly?water",
+    photoFull:  "https://source.unsplash.com/1200x700/weekly?water",
   },
 {
-    photoName: "photo 2",
-    photoThumb: "images/photo_2_thumb.png",
-    photoFull:  "images/photo_2_full.jpeg",
+    photoName: "photo-1-2",
+    class: "photo-2",
+    rel: "photo-2",
+    photoThumb: "https://source.unsplash.com/300x300/weekly?water",
+    photoFull:  "https://source.unsplash.com/1200x700/weekly?water",
   },
  {
-    photoName: "photo 3",
-    photoThumb: "images/photo_3_thumb.png",
-    photoFull:  "images/photo_3_full.jpeg",
+    photoName: "photo-1-3",
+    class: "photo-3",
+    rel: "photo-3",
+    photoThumb: "https://source.unsplash.com/300x300/weekly?water",
+    photoFull:  "https://source.unsplash.com/1200x700/weekly?water",
   }]
 },
+//
+//// Album 2
+//
+{
+  type: "album",
+  rel: "album-2",
+  class: "album-2",
+  albumTitle: "Album 2",
+  albumCover: "https://source.unsplash.com/300x300/weekly?water",
+  photos: [{
+    photoName: "photo-2-1",
+    class: "photo-1",
+    rel: "photo-1",
+    photoThumb: "https://source.unsplash.com/300x300/weekly?water",
+    photoFull:  "https://source.unsplash.com/1200x700/weekly?water",
+  },
+{
+    photoName: "photo-2-2",
+    class: "photo-2",
+    rel: "photo-2",
+    photoThumb: "https://source.unsplash.com/300x300/weekly?water",
+    photoFull:  "https://source.unsplash.com/1200x700/weekly?water",
+  },
+ {
+    photoName: "photo-2-3",
+    class: "photo-3",
+    rel: "photo-3",
+    photoThumb: "https://source.unsplash.com/300x300/weekly?water",
+    photoFull:  "https://source.unsplash.com/1200x700/weekly?water",
+  }]
+},
+//
+//// Album 3
+//
+{
+  type: "album",
+  rel: "album-3",
+  class: "album-3",
+  albumTitle: "Album 3",
+  albumCover: "https://source.unsplash.com/300x300/weekly?water",
+  photos: [{
+    photoName: "photo-3-1",
+    class: "photo-1",
+    rel: "photo-1",
+    photoThumb: "https://source.unsplash.com/300x300/weekly?water",
+    photoFull:  "https://source.unsplash.com/1200x700/weekly?water",
+  },
+{
+    photoName: "photo-3-2",
+    class: "photo-2",
+    rel: "photo-2",
+    photoThumb: "https://source.unsplash.com/300x300/weekly?water",
+    photoFull:  "https://source.unsplash.com/1200x700/weekly?water",
+  },
+ {
+    photoName: "photo-3-3",
+    class: "photo-3",
+    rel: "photo-3",
+    photoThumb: "https://source.unsplash.com/300x300/weekly?water",
+    photoFull:  "https://source.unsplash.com/1200x700/weekly?water",
+  }]
+},
+];
