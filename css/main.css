@@ -7,29 +7,28 @@
   margin-right: 8px;
   position: relative;
   text-decoration: none;
-  color: white;
-  margin-bottom: 10px;
+  color: black;
+  margin-bottom: 5px;
   transition: .2s all;
-  background-blend-mode: soft-light;
-  background-color: #333; }
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1); }
   .albumCover:hover {
-    background-blend-mode: unset;
+    background-color: #eee;
     transform: translate3d(0px, -2%, 3em) scale(0.95); }
   .albumCover h2 {
     padding: 30%;
-    text-align: center; }
-  .albumCover:nth-child(1) {
-    background-image: url(../img/green-1-thumb.jpg); }
-  .albumCover:nth-child(2) {
-    background-image: url(../img/purple-1-thumb.jpg); }
-  .albumCover:nth-child(3) {
-    background-image: url(../img/yellow-1-thumb.jpg); }
-  .albumCover:nth-child(4) {
-    background-image: url(../img/blue-1-thumb.jpg); }
-  .albumCover:nth-child(5) {
-    background-image: url(../img/red-1-thumb.jpg); }
-  .albumCover:nth-child(6) {
-    background-image: url(../img/black-1-thumb.jpg); }
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0.4);
+    transition: .2s all; }
+    .albumCover h2:hover {
+      background-color: rgba(238, 238, 238, 0.9); }
+  .albumCover img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: -1000;
+    transition: .2s all; }
 
 .photo img {
   width: 100%; }
@@ -46,7 +45,7 @@ body {
   background: #eee; }
 
 .container {
-  width: 70%;
+  width: 85%;
   margin: 0 auto; }
 
 section {
@@ -54,16 +53,19 @@ section {
   width: 100%; }
 
 .active {
-  display: inline-block; }
+  display: inline-block;
+  transition: .2s all; }
 
 .toggle {
-  display: none; }
+  display: none;
+  transition: .2s all; }
 
 .show {
-  display: inline-block; }
+  display: inline-block;
+  transition: .2s all; }
 
 nav {
-  width: 70%;
+  width: 85%;
   margin: 0 auto; }
   nav li {
     display: inline; }
