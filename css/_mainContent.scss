@@ -1,0 +1,42 @@
+.albums{
+  width:100%;
+}
+.albumCover{
+  width: 48.7%;
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  text-decoration:none;
+  color:white;
+  margin-bottom:10px;
+  transition:.2s all;
+  background-blend-mode: soft-light;
+  background-color: #333;
+  &:hover{
+    background-blend-mode: unset;
+    transform: translate3d(0px, -2%, 3em) scale(.95);
+    // box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  }
+  h2{
+    padding: 30%;
+    text-align:center;
+  }
+  &:nth-child(1){
+    background-image: url(../img/green-1-thumb.jpg);
+  }
+  &:nth-child(2){
+    background-image: url(../img/purple-1-thumb.jpg);
+  }
+  &:nth-child(3){
+    background-image: url(../img/yellow-1-thumb.jpg);
+  }
+  &:nth-child(4){
+    background-image: url(../img/blue-1-thumb.jpg);
+  }
+  &:nth-child(5){
+    background-image: url(../img/red-1-thumb.jpg);
+  }
+  &:nth-child(6){
+    background-image: url(../img/black-1-thumb.jpg);
+  }
+}

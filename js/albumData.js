@@ -4,13 +4,13 @@ var albumData = [{
   rel: "album-1",
   class: "album-1",
   albumTitle: "Album 1",
-  albumCover: "https://source.unsplash.com/300x300/weekly?water",
+  albumCover: "../img/black-1-thumb.jpg",
   photos: [{
     photoName: "photo-1-1",
     class: "photo-1",
     rel: "photo-1",
-    photoThumb: "https://source.unsplash.com/300x300/weekly?water",
-    photoFull:  "https://source.unsplash.com/1200x700/weekly?water",
+    photoThumb: "../img/black-1-thumb.jpg",
+    photoFull:  "../img/black-1.jpg",
   },
 {
     photoName: "photo-1-2",
