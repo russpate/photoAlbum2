@@ -25,14 +25,19 @@ $('.albums').append(albumCovers);
 //// Album view and into photo
 //
 //
-
 var albumView = "";
 var photoThumbs = "";
 var photoFull = "";
 _.each(albumData, function(item){
+  // This function inside the function allows access to the
+  // the photoBank.
   _.each(item.photoBank, function(photo){
   photoThumbs +=
+  // allPhotos is a look at all the photos from inside the album
+  // you should be able to click a photo thumbnail and it opens
+  // the full photo.
   "<div class='allPhotos photo toggle' href='#'>"
+    // photoThumb + link to full photo
     + "<a rel='"
     + photo.rel
     + "' class='photoThumb' href='#'>"
@@ -42,6 +47,8 @@ _.each(albumData, function(item){
     +"</div>";
   });
   _.each(item.photoBank, function(photo){
+    // From this view you should only see ONE photo with a link
+    // back to the album it belongs to.
     photoFull +=
     "<div class='toggle "
     + photo.class
