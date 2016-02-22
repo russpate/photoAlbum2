@@ -27,10 +27,17 @@ $('.albums').append(albumCovers);
 //
 var albumView = "";
 var photoThumbs = "";
-var photoFull = "";
 _.each(albumData, function(item){
   // This function inside the function allows access to the
   // the photoBank.
+  albumView +=
+  "<section class='album "
+  + item.class
+  + "'>"
+  + "<h1 class='albumTitle'>"
+  + item.albumTitle
+  + "</h1>"
+  + "</section>";
   _.each(item.photoBank, function(photo){
   photoThumbs +=
   // allPhotos is a look at all the photos from inside the album
@@ -44,13 +51,8 @@ _.each(albumData, function(item){
     +"<img src='"
     + photo.photoThumb
     + "' /></a>"
-    +"</div>";
-  });
-  _.each(item.photoBank, function(photo){
-    // From this view you should only see ONE photo with a link
-    // back to the album it belongs to.
-    photoFull +=
-    "<div class='toggle "
+    +"</div>"
+    + "<div class='toggle "
     + photo.class
     + "' href='#'>"
     + "<a rel='allPhotos' class='photoBack' href='#'>back to "
@@ -61,18 +63,11 @@ _.each(albumData, function(item){
     + "' />"
     + "</div>";
   });
-  albumView +=
-  "<section class='album "
-  + item.class
-  + "'>"
-  + "<h1 class='albumTitle'>"
-  + item.albumTitle
-  + "</h1>"
-  + "</section>";
+
 });
 $(".albums").after(albumView);
 $(".albumTitle").after(photoThumbs);
-$(".allPhotos").after(photoFull);
+
 
 
 ////// Click Events
