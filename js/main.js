@@ -2,9 +2,7 @@
 $(document).ready(function () {
 //
 //
-//
-//
-
+//// Homepage Album Covers
 var albumCovers = "";
 _.each(albumData, function(item){
   albumCovers +=
@@ -22,37 +20,52 @@ _.each(albumData, function(item){
   + "</a>";
 });
 $('.albums').append(albumCovers);
+//
+//
+//// Album view and into photo
+//
+//
 
 var albumView = "";
+var photoThumbs = "";
+var photoFull = "";
 _.each(albumData, function(item){
+  _.each(item.photoBank, function(photo){
+  photoThumbs +=
+  "<div class='allPhotos photo toggle' href='#'>"
+    + "<a rel='"
+    + photo.rel
+    + "' class='photoThumb' href='#'>"
+    +"<img src='"
+    + photo.photoThumb
+    + "' /></a>"
+    +"</div>";
+  });
+  _.each(item.photoBank, function(photo){
+    photoFull +=
+    "<div class='toggle "
+    + photo.class
+    + "' href='#'>"
+    + "<a rel='allPhotos' class='photoBack' href='#'>back to "
+    + item.albumTitle
+    + "</a>"
+    + "<img src='"
+    + photo.photoFull
+    + "' />"
+    + "</div>";
+  });
   albumView +=
   "<section class='album "
   + item.class
   + "'>"
-  + "<h1>"
+  + "<h1 class='albumTitle'>"
   + item.albumTitle
   + "</h1>"
-  + "<div class='allPhotos photo toggle' href='#'>"
-  + "<a rel='"
-  + item.photoBank.rel
-  + "' class='photoThumb' href='#'>"
-  +"<img src='"
-  + item.photoBank.photoThumb
-  + "' /></a>"
-  +"</div>"
-  + "<div class='toggle"
-  + item.photoBank.class
-  + "' href='#'>"
-  + "<a rel='allPhotos' class='photoBack' href='#'>back to "
-  + item.albumTitle
-  + "</a>"
-  + "<img src='"
-  + item.photoBank.photoFull
-  + "' />"
-  + "</div>"
-  +"</section>";
+  + "</section>";
 });
 $(".albums").after(albumView);
+$(".albumTitle").after(photoThumbs);
+$(".allPhotos").after(photoFull);
 
 
 ////// Click Events
