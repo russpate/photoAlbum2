@@ -2,9 +2,8 @@
   width: 100%; }
 
 .albumCover {
-  width: 48.7%;
+  width: 49.5%;
   display: inline-block;
-  margin-right: 8px;
   position: relative;
   text-decoration: none;
   color: black;
@@ -14,6 +13,8 @@
   background-color: rgba(238, 238, 238, 0.7); }
   .albumCover:hover {
     transform: translate3d(0px, -2%, 3em) scale(0.95); }
+  .albumCover:nth-child(even) {
+    margin-left: 10px; }
   .albumCover h2 {
     padding: 30%;
     text-align: center;
@@ -29,12 +30,24 @@
     top: 0;
     z-index: -1000; }
 
+.hero h1 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  text-align: center;
+  margin: 10px 0; }
+
 .photo {
   width: 100%;
   overflow: hidden; }
 
+.photoThumb img {
+  width: 49.7%; }
+
 .photoThumb {
   width: 49%; }
+
+.album h1 {
+  padding: 50px 0; }
 
 * {
   padding: 0;
@@ -68,12 +81,15 @@ section {
 
 nav {
   width: 85%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center; }
   nav li {
     display: inline; }
   nav a {
     text-decoration: none;
-    color: blue;
-    font-weight: 600; }
+    color: gray;
+    font-weight: 600;
+    margin-right: 20px; }
     nav a:hover {
-      color: green; }
+      color: black; }
