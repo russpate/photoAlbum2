@@ -34,20 +34,20 @@ _.each(albumData, function(item){
   + "</h1>"
   + "<div class='allPhotos photo toggle' href='#'>"
   + "<a rel='"
-  + item.photos.rel
+  + item.photoBank.rel
   + "' class='photoThumb' href='#'>"
   +"<img src='"
-  + item.photos.photoThumb
+  + item.photoBank.photoThumb
   + "' /></a>"
   +"</div>"
   + "<div class='toggle"
-  + item.photos.photoClass
+  + item.photoBank.class
   + "' href='#'>"
   + "<a rel='allPhotos' class='photoBack' href='#'>back to "
   + item.albumTitle
   + "</a>"
   + "<img src='"
-  + item.photos.photoFull
+  + item.photoBank.photoFull
   + "' />"
   + "</div>"
   +"</section>";

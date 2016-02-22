@@ -5,7 +5,7 @@ var albumData = [{
   class: "album-1",
   albumTitle: "Black.",
   albumCover: "img/black-1-thumb.jpg",
-  photos: [{
+  photoBank: [{
     photoName: "photo-1-1",
     class: "photo photo-1",
     rel: "photo-1",
@@ -57,7 +57,7 @@ var albumData = [{
   class: "album-2",
   albumTitle: "Green.",
   albumCover: "img/green-1-thumb.jpg",
-  photos: [{
+  photoBank: [{
     photoName: "photo-2-1",
     class: "photo photo-1",
     rel: "photo-1",
@@ -109,7 +109,7 @@ var albumData = [{
   class: "album-3",
   albumTitle: "Yellow.",
   albumCover: "img/yellow-1-thumb.jpg",
-  photos: [{
+  photoBank: [{
     photoName: "photo-3-1",
     class: "photo photo-1",
     rel: "photo-1",
@@ -161,7 +161,7 @@ var albumData = [{
   class: "album-4",
   albumTitle: "Purple.",
   albumCover: "img/purple-1-thumb.jpg",
-  photos: [{
+  photoBank: [{
     photoName: "photo-4-1",
     class: "photo photo-1",
     rel: "photo-1",
@@ -213,7 +213,7 @@ var albumData = [{
   class: "album-5",
   albumTitle: "Blue.",
   albumCover: "img/blue-1-thumb.jpg",
-  photos: [{
+  photoBank: [{
     photoName: "photo-5-1",
     class: "photo photo-1",
     rel: "photo-1",
@@ -265,7 +265,7 @@ var albumData = [{
   class: "album-6",
   albumTitle: "Red.",
   albumCover: "img/red-1-thumb.jpg",
-  photos: [{
+  photoBank: [{
     photoName: "photo-6-1",
     class: "photo photo-1",
     rel: "photo-1",
@@ -307,5 +307,5 @@ var albumData = [{
      photoThumb: "../img/red-6-thumb.jpg",
      photoFull:  "../img/red-6.jpg",
   }]
-},
+}
 ];
