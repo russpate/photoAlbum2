@@ -3,7 +3,7 @@ var albumData = [{
   type: "album",
   rel: "album-1",
   class: "album-1",
-  albumTitle: "Album 1",
+  albumTitle: "Black.",
   albumCover: "img/black-1-thumb.jpg",
   photos: [{
     photoName: "photo-1-1",
@@ -55,7 +55,7 @@ var albumData = [{
   type: "album",
   rel: "album-2",
   class: "album-2",
-  albumTitle: "Album 2",
+  albumTitle: "Green.",
   albumCover: "img/green-1-thumb.jpg",
   photos: [{
     photoName: "photo-2-1",
@@ -107,7 +107,7 @@ var albumData = [{
   type: "album",
   rel: "album-3",
   class: "album-3",
-  albumTitle: "Album 3",
+  albumTitle: "Yellow.",
   albumCover: "img/yellow-1-thumb.jpg",
   photos: [{
     photoName: "photo-3-1",
@@ -159,7 +159,7 @@ var albumData = [{
   type: "album",
   rel: "album-4",
   class: "album-4",
-  albumTitle: "Album 4",
+  albumTitle: "Purple.",
   albumCover: "img/purple-1-thumb.jpg",
   photos: [{
     photoName: "photo-4-1",
@@ -211,7 +211,7 @@ var albumData = [{
   type: "album",
   rel: "album-5",
   class: "album-5",
-  albumTitle: "Album 5",
+  albumTitle: "Blue.",
   albumCover: "img/blue-1-thumb.jpg",
   photos: [{
     photoName: "photo-5-1",
@@ -263,7 +263,7 @@ var albumData = [{
   type: "album",
   rel: "album-6",
   class: "album-6",
-  albumTitle: "Album 6",
+  albumTitle: "Red.",
   albumCover: "img/red-1-thumb.jpg",
   photos: [{
     photoName: "photo-6-1",

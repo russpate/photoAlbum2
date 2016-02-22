@@ -11,24 +11,23 @@
   margin-bottom: 5px;
   transition: .2s all;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.1); }
+  background-color: rgba(238, 238, 238, 0.7); }
   .albumCover:hover {
-    background-color: #eee;
     transform: translate3d(0px, -2%, 3em) scale(0.95); }
   .albumCover h2 {
     padding: 30%;
     text-align: center;
-    background-color: rgba(238, 238, 238, 0.4);
+    background-color: rgba(238, 238, 238, 0.7);
     transition: .2s all; }
     .albumCover h2:hover {
-      background-color: rgba(238, 238, 238, 0.9); }
+      color: transparent;
+      background-color: rgba(238, 238, 238, 0.1); }
   .albumCover img {
     position: absolute;
     left: 0;
     width: 100%;
     top: 0;
-    z-index: -1000;
-    transition: .2s all; }
+    z-index: -1000; }
 
 .photo img {
   width: 100%; }

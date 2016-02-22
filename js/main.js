@@ -23,6 +23,36 @@ _.each(albumData, function(item){
 });
 $('.albums').append(albumCovers);
 
+var albumView = "";
+_.each(albumData, function(item){
+  albumView +=
+  "<section class='album "
+  + item.class
+  + "'>"
+  + "<h1>"
+  + item.albumTitle
+  + "</h1>"
+  + "<div class='allPhotos photo toggle' href='#'>"
+  + "<a rel='"
+  + item.photos.rel
+  + "' class='photoThumb' href='#'>"
+  +"<img src='"
+  + item.photos.photoThumb
+  + "' /></a>"
+  +"</div>"
+  + "<div class='toggle"
+  + item.photos.photoClass
+  + "' href='#'>"
+  + "<a rel='allPhotos' class='photoBack' href='#'>back to "
+  + item.albumTitle
+  + "</a>"
+  + "<img src='"
+  + item.photos.photoFull
+  + "' />"
+  + "</div>"
+  +"</section>";
+});
+$(".albums").after(albumView);
 
 
 ////// Click Events
