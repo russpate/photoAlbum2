@@ -1,13 +1,22 @@
 $(document).ready(function () {
-
-
-
-
-
-
-
-
-  
+  //// Homepage Album Covers
+  var albumCovers = "";
+  _.each(albumData, function(item){
+    albumCovers +=
+    "<a rel='"
+    + item.rel
+    + "' class='albumCover' href='#'>"
+    + "<div>"
+    + "<h2>"
+    + item.albumTitle
+    + "</h2>"
+    + "<img src='"
+    + item.albumCover
+    + "' />"
+    + "</div>"
+    + "</a>";
+  });
+  $('.albums').append(albumCovers);
   ////// Click Events
   //
   // selects albums from the homepage

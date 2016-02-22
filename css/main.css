@@ -29,8 +29,9 @@
     top: 0;
     z-index: -1000; }
 
-.photo img {
-  width: 100%; }
+.photo {
+  width: 100%;
+  overflow: hidden; }
 
 .photoThumb {
   width: 49%; }
